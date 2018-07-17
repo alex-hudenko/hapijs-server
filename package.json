@@ -5,7 +5,17 @@
   "repository": "git@github.com:alex-hudenko/hapijs-server.git",
   "author": "alex-hudenko <ahudenko@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -c -t 85",
+    "test-cov-html": "lab -r html -o coverage.html"
+  },
   "dependencies": {
     "hapi": "^17.5.2"
+
+  },
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^15.5.0"
   }
 }
